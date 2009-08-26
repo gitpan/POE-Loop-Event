@@ -1,4 +1,17 @@
 =====================================
+2009-08-26T15:36:10.468146Z ple-1_301
+=====================================
+
+  2009-08-26 15:31:23 (r2644) by rcaputo
+  polo-event/Makefile.PL M; polo-event/lib/POE/Loop/Event.pm M
+
+    Add POE::Test::Loops to configure_requires and build_requires.
+
+  2009-08-26 02:30:10 (r2637) by rcaputo; polo-event/Makefile.PL M
+
+    We use the generic svn-log.perl, not the one included in POE.
+
+=====================================
 2009-08-26T02:22:29.916075Z ple-1_300
 =====================================
 
