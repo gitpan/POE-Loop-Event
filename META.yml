@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               POE-Loop-Event
-version:            1.301
+version:            1.302
 abstract:           Event.pm support for POE.
 author:
     - Rocco Caputo <rcaputo@cpan.org>
