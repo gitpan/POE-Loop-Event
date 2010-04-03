@@ -10,7 +10,7 @@ use strict;
 use POE::Loop::PerlSignals;
 
 use vars qw($VERSION);
-$VERSION = '1.302'; # NOTE - Should be #.### (three decimal places)
+$VERSION = '1.303'; # NOTE - Should be #.### (three decimal places)
 
 =for poe_tests
 
@@ -33,6 +33,7 @@ sub skip_tests {
 package POE::Kernel;
 
 use strict;
+use Event;
 
 my $_watcher_timer;
 my @fileno_watcher;
@@ -203,6 +204,10 @@ sub loop_do_timeslice {
 
 sub loop_run {
   my $self = shift;
+
+  # Avoid a hang when trying to run an idle Kernel.
+  $self->_test_if_kernel_is_idle();
+
   while ($self->_data_ses_count()) {
     $self->loop_do_timeslice();
   }

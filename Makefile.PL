@@ -85,23 +85,23 @@ WriteMakefile(
       '/usr/bin/tee ./$(DISTNAME)-$(VERSION)/CHANGES > ./CHANGES'
     ),
   },
-  clean           => { FILES => 't/poe_loop_event/*.t t/poe_loop_event' },
+  clean           => { FILES => 't/poe_loop_event/*.t t/poe_loop_event ' . $marker },
   test            => { TESTS => 't/*.t t/poe_loop_event/*.t' },
 
   CONFIGURE_REQUIRES => {
     'ExtUtils::MakeMaker' => 0,
-    'POE::Test::Loops'    => 1.021,
+    'POE::Test::Loops'    => 1.034,
   },
 
   META_MERGE      => {
     build_requires => {
-      'POE::Test::Loops'    => 1.021,
+      'POE::Test::Loops'    => 1.034,
     },
   },
 
   PREREQ_PM       => {
-    'POE'               => 1.007,
-    'Event'             => 1.11,
+    'POE'               => 1.288,
+    'Event'             => 1.13,
   },
 );
 
