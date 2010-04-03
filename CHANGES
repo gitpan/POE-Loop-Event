@@ -1,4 +1,14 @@
 =====================================
+2010-04-03T20:03:59.305570Z ple-1_304
+=====================================
+
+  2010-04-03 20:01:59 (r2866) by rcaputo
+  polo-event/Makefile.PL M; polo-event/lib/POE/Loop/Event.pm M
+
+    Bump revision for a new release. No significant changes, other than
+    to build a new dist with the latest EUMM.
+
+=====================================
 2010-04-03T18:19:29.567440Z ple-1_303
 =====================================
 
