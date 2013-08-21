@@ -1,95 +1,36 @@
-=====================================
-2010-04-03T20:03:59.305570Z ple-1_304
-=====================================
+================================
+2013-08-20 19:47:58 -0400 v1_305
+================================
 
-  2010-04-03 20:01:59 (r2866) by rcaputo
-  polo-event/Makefile.PL M; polo-event/lib/POE/Loop/Event.pm M
+  commit 8068624c6e4bfdee879d89cd80fe56a0c3e5e818
+  Author: Rocco Caputo <rcaputo@cpan.org>
+  Date:   Tue Aug 20 19:47:58 2013 -0400
+  
+    Bump version for release.
 
-    Bump revision for a new release. No significant changes, other than
-    to build a new dist with the latest EUMM.
+  commit 2a2863de5680dbab7f109dc656d5808ae596ae04
+  Author: Rocco Caputo <rcaputo@cpan.org>
+  Date:   Tue Aug 20 19:25:56 2013 -0400
+  
+    Update copyright notice and repository URL.
 
-=====================================
-2010-04-03T18:19:29.567440Z ple-1_303
-=====================================
+  commit f5ab8443e09b58e9d74634a5786deb498e4a6890
+  Author: Rocco Caputo <rcaputo@cpan.org>
+  Date:   Tue Aug 20 19:23:35 2013 -0400
+  
+    Update dependencies, and switch CHANGES to git-log.
 
-  2010-04-03 18:18:26 (r2858) by rcaputo
-  polo-event/Makefile.PL M; polo-event/lib/POE/Loop/Event.pm M
+  commit 79e9dc3f31eafe49973826deca4d565a742a4aeb
+  Author: Rocco Caputo <rcaputo@cpan.org>
+  Date:   Tue Aug 20 13:41:21 2013 -0400
+  
+    Remove artifact from Snerp::Vortex conversion.
 
-    Fix PLE dependencies and bump revision for release.
-
-  2010-03-24 06:52:46 (r2852) by apocal
-  poe M; polo-gtk/Makefile.PL M; polo-tk M; polo-event M; poe-test-loops
-  M; polo-gtk M
-
-    Set svn:ignore for: META.yml CHANGES run_network_tests PoLo-Gtk
-    forgot to clean run_network_tests 
-
-  2010-03-22 15:48:33 (r2847) by rcaputo
-  polo-event/lib/POE/Loop/Event.pm M
-
-    Resolve a test hang when trying to run with POE_TRACE_DEFAULT=1 and
-    no events in the queue. 
-
-  2010-03-11 05:06:03 (r2837) by apocal
-  polo-event/Makefile.PL M; polo-tk/Makefile.PL M
-
-    Add "run_network_tests" to "make clean" 
-
-  2010-03-06 23:54:47 (r2826) by apocal
-  polo-event/lib/POE/Loop/Event.pm M
-
-    Add missing import line for Event.pm so the loop will load with
-    POE_EVENT_LOOP env var 
-
-=====================================
-2009-08-27T04:27:04.178834Z ple-1_302
-=====================================
-
-  2009-08-27 04:25:09 (r2650) by rcaputo
-  polo-event/Makefile.PL M; polo-event/lib/POE/Loop/Event.pm M
-
-    Add the info test we forgot to include.
-
-=====================================
-2009-08-26T15:36:10.468146Z ple-1_301
-=====================================
-
-  2009-08-26 15:31:23 (r2644) by rcaputo
-  polo-event/Makefile.PL M; polo-event/lib/POE/Loop/Event.pm M
-
-    Add POE::Test::Loops to configure_requires and build_requires.
-
-  2009-08-26 02:30:10 (r2637) by rcaputo; polo-event/Makefile.PL M
-
-    We use the generic svn-log.perl, not the one included in POE.
-
-=====================================
-2009-08-26T02:22:29.916075Z ple-1_300
-=====================================
-
-  2009-08-25 17:05:17 (r2635) by rcaputo
-  polo-gtk/lib/POE/Loop A; polo-gtk/lib/POE/Loop/Gtk.pm A;
-  polo-tk/MANIFEST.SKIP A; polo-gtk/lib A; polo-gtk/MANIFEST A;
-  polo-gtk/MANIFEST.SKIP A; poe/lib/POE/Loop/TkActiveState.pm D;
-  polo-tk/Makefile.PL A; polo-tk/lib/POE A; polo-tk/lib/POE/Loop/Tk.pm A;
-  polo-gtk/Makefile.PL A; polo-tk/t/00_info.t A; polo-tk A;
-  poe/lib/POE/Loop/Gtk.pm D; polo-gtk/lib/POE A;
-  poe/lib/POE/Loop/TkCommon.pm D; polo-tk/lib/POE/Loop A; polo-tk/t A;
-  polo-gtk/README A; polo-event/lib/POE/Loop A; polo-gtk/t/00_info.t A;
-  polo-tk/MANIFEST A; polo-gtk A; polo-event/MANIFEST A; polo-event/lib
-  A; polo-gtk/t A; polo-event/MANIFEST.SKIP A;
-  polo-tk/lib/POE/Loop/TkActiveState.pm A; poe/mylib/Makefile-5005.pm M;
-  poe/lib/POE/Loop/Tk.pm D; polo-event/Makefile.PL A;
-  poe/lib/POE/Loop/Event.pm D; polo-event/lib/POE A; polo-tk/README A;
-  polo-event/README A; polo-event/lib/POE/Loop/Event.pm A;
-  polo-event/t/00_info.t A; polo-event A;
-  polo-tk/lib/POE/Loop/TkCommon.pm A; poe/MANIFEST M; polo-tk/lib A;
-  polo-event/t A
-
-    Create new project directories for POE::Loop::{Event,Tk,Gtk}. Moved
-    the loops to their new project directories. Configured the new
-    projects for CPAN distribution. Removed the event loops from POE's
-    distro configuration. 
+  commit 95fb7fc6664209f0ca76dc8bf6dd97e3502d8c30
+  Author: Rocco Caputo <rcaputo@cpan.org>
+  Date:   Tue Sep 7 22:06:24 2010 -0400
+  
+    Promote polo-event files to top level. 
 
 ==============
 End of Excerpt
